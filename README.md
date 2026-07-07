@@ -94,12 +94,3 @@ Ignored sensitive or local files include:
 - Android Studio and Gradle build outputs
 - Local archives and backup files
 
-## Repository
-
-Create an empty repository on GitHub, Gitee, or another Git hosting service, then add its remote URL:
-
-```powershell
-git remote add origin <your-repository-url>
-git branch -M main
-git push -u origin main
-```

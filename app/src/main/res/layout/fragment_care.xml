@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home.care.CareFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/bgs1"
+            android:padding="3sp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/bgs1"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="100sp"
+                    android:orientation="vertical"
+                    android:padding="2sp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="姓名"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:text="姓名"
+                        android:background="@drawable/underline"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150sp"
+                    android:orientation="vertical"
+                    android:padding="2sp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="患者ID"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/userid"
+                        android:layout_width="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:text="患者ID"
+                        android:background="@drawable/underline"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="80sp"
+                    android:orientation="vertical"
+                    android:padding="2sp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="血型"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/bloodtype"
+                        android:layout_width="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:text="血型"
+                        android:background="@drawable/underline"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20sp"
+
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:id="@+id/voiceinput"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:src="@drawable/microphone"
+                        android:layout_height="30sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="语音录入"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/bptest"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="10sp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:src="@drawable/blood1"
+                        android:layout_height="30sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="测量血压"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/setrecheck"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:src="@drawable/tag"
+                        android:layout_height="30sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="标记二检"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/saveresult"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:src="@drawable/save"
+                        android:layout_height="30sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="保存结果"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/networksetting"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:src="@drawable/network"
+                        android:layout_height="30sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="网络设置"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="v1.2"
+                    android:gravity="center"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="2sp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_height="match_parent"    >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="2sp"
+                    android:layout_weight="4"
+
+                    android:background="@drawable/underline"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="92dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/underline"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="心率 bpm" />
+
+                        <TextView
+                            android:id="@+id/bpm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="BPM"
+                            android:textSize="25sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="5sp"
+                        android:background="@drawable/underline"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="心电："/>
+                            <!--               <TextView
+                                               android:id="@+id/ecgnum"
+                                               android:layout_width="50sp"
+                                               android:layout_height="wrap_content"
+                                               android:textSize="20sp"
+                                               android:text="1mV"/>   -->
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/sensor1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+                            <TextView
+                                android:id="@+id/sensor2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="未连接心电传感器"
+                                android:textColor="#fff000"
+                                android:textSize="40dp" />
+                        </LinearLayout>
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/wave_view1"
+                            android:layout_width="match_parent"
+                            android:visibility="visible"
+                            android:layout_height="match_parent" />
+                        <!--                        <com.zosoftware.solid.ui.MAIN.WaveView-->
+                        <!--                            android:id="@+id/wave_view1"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="match_parent"-->
+                        <!--                            android:background="@drawable/underline"-->
+                        <!--                            app:draw_mode="normal"-->
+                        <!--                            app:wave_line_stroke_width="5"-->
+                        <!--                            app:wave_background="#000000"-->
+                        <!--                            app:wave_line_color="#ffff00" />-->
+                        <!--                        <com.zosoftware.solid.ui.home.care.EcgView-->
+                        <!--                            android:id="@+id/wave_view1"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="match_parent"-->
+                        <!--                            />-->
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="5"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:padding="5sp"
+                        android:layout_margin="2sp"
+                        android:gravity="center"
+                        android:background="@drawable/underline"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="无创血压 mmHg"
+                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="10sp"
+                                android:text="上次采集时间："/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="10sp"
+                                android:text="5/2/13:29"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/npb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="30sp"
+                            android:text="134/88"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:padding="5sp"
+                        android:layout_margin="2sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/underline"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="血氧%"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/bo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="30sp"
+                            android:text="BO"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:padding="5sp"
+                        android:layout_margin="2sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/underline"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="体温 °C"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/temp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="30sp"
+                            android:text="体温"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:padding="5sp"
+                        android:layout_margin="2sp"
+                        android:background="@drawable/underline"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="呼吸率 rpm"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/rpm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="30sp"
+                            android:text="RPM"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="5"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_margin="2sp"
+                        android:background="@drawable/underline"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:padding="5sp"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="GCS评分"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/gcs"
+                                android:layout_width="80sp"
+                                android:background="@drawable/underline"
+                                android:text="获取"
+                                android:textSize="30sp"
+                                android:gravity="center"
+
+                                android:layout_height="40sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:padding="5sp"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="PHI评分"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/phi"
+                                android:layout_width="80sp"
+                                android:background="@drawable/underline"
+                                android:text="获取"
+                                android:gravity="center"
+                                android:textSize="30sp"
+
+                                android:layout_height="40sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:padding="5sp"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="SI评分"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/si"
+                                android:layout_width="80sp"
+                                android:background="@drawable/underline"
+                                android:text="获取"
+                                android:gravity="center"
+                                android:textSize="30sp"
+
+                                android:layout_height="40sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:padding="5sp"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="rSIG评分"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/rsig"
+                                android:layout_width="80sp"
+                                android:background="@drawable/underline"
+                                android:text="获取"
+                                android:gravity="center"
+                                android:textSize="30sp"
+
+                                android:layout_height="40sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:layout_margin="2sp"
+                        android:id="@+id/start"
+                        android:background="@drawable/underline"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="START快速评估"
+                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <CheckBox
+                                android:id="@+id/start_state1"
+                                android:layout_width="wrap_content"
+                                android:text=""
+                                android:layout_marginLeft="3sp"
+                                android:background="@color/bgs1"
+                                android:layout_height="wrap_content"/>
+                            <CheckBox
+                                android:id="@+id/start_state2"
+                                android:layout_width="wrap_content"
+                                android:text=""
+                                android:background="@color/bgs3"
+                                android:layout_marginLeft="3sp"
+                                android:layout_height="wrap_content"/>
+                            <CheckBox
+                                android:id="@+id/start_state3"
+                                android:layout_width="wrap_content"
+                                android:text=""
+                                android:background="@color/bgs4"
+                                android:layout_marginLeft="3sp"
+                                android:layout_height="wrap_content"/>
+                            <CheckBox
+                                android:id="@+id/start_state4"
+                                android:layout_width="wrap_content"
+                                android:text=""
+                                android:background="@color/bgs5"
+                                android:layout_marginLeft="3sp"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:padding="2sp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="2sp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/underline"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="伤部"
+                        android:layout_margin="4sp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/injuredarea"
+                        android:layout_width="100sp"
+                        android:background="@drawable/underline"
+                        android:text="受伤部位"
+                        android:gravity="center"
+                        android:layout_height="40sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="2sp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/underline"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="伤类"
+                        android:layout_margin="4sp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/injuredtype"
+                        android:layout_width="100sp"
+                        android:background="@drawable/underline"
+                        android:text="类型"
+                        android:gravity="center"
+                        android:layout_height="40sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="2sp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/underline"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="伤型"
+                        android:layout_margin="4sp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/injuredser"
+                        android:layout_width="100sp"
+                        android:background="@drawable/underline"
+                        android:text="伤型"
+                        android:gravity="center"
+                        android:layout_height="40sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="2sp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/underline"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="并发症"
+                        android:layout_margin="4sp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/comprehan"
+                        android:layout_width="100sp"
+                        android:background="@drawable/underline"
+                        android:text="并发症"
+                        android:gravity="center"
+                        android:layout_height="40sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="5sp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/injured_severity1"
+                        android:layout_width="match_parent"
+                        android:text="轻伤"
+                        android:padding="5sp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+
+                        android:background="@color/bgs6"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/injured_severity2"
+                        android:layout_width="match_parent"
+                        android:text="中度伤"
+                        android:padding="5sp"
+                        android:gravity="center"
+                        android:layout_marginLeft="3sp"
+                        android:layout_weight="1"
+
+                        android:background="@color/bgs6"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="5sp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/injured_severity3"
+                        android:layout_width="match_parent"
+                        android:text="重伤"
+                        android:padding="5sp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+
+                        android:background="@color/bgs6"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/injured_severity4"
+                        android:layout_width="match_parent"
+                        android:text="危重伤"
+                        android:padding="5sp"
+                        android:layout_marginLeft="3sp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+
+                        android:background="@color/bgs6"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

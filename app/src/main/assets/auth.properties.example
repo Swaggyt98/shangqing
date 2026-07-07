@@ -1,0 +1,12 @@
+﻿# Copy this file to auth.properties and fill in local credentials.
+# Do not commit auth.properties.
+
+TENCENT_ASR_APP_ID=
+TENCENT_ASR_SECRET_ID=
+TENCENT_ASR_SECRET_KEY=
+
+QIANFAN_ACCESS_KEY=
+QIANFAN_SECRET_KEY=
+
+CHAT_ANYWHERE_API_URL=https://api.chatanywhere.tech/v1/chat/completions
+CHAT_ANYWHERE_API_KEY=

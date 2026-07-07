@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:padding="10sp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="服务器地址："
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/netaddress"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="服务器端口："
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/netport"
+            android:inputType="number"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="蓝牙SPPUUID："
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/bleuuid"
+            android:inputType="number"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:text="关闭"
+            android:layout_margin="3sp"
+            android:background="@color/serial1"
+            android:layout_height="30sp"/>
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:text="确认"
+            android:layout_margin="3sp"
+            android:background="@color/bgs6"
+            android:layout_height="30sp"/>
+    </LinearLayout>
+</LinearLayout>
